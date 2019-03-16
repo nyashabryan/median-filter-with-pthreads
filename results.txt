@@ -1,0 +1,160 @@
+rm -f -r bin/* obj/*
+g++ -ITools -Ijpeg-6b -c Prac2.cpp -o obj/Prac2.o
+g++ -ITools -Ijpeg-6b -c Tools/JPEG.cpp -o obj/JPEG.o
+g++ -ITools -Ijpeg-6b -c Tools/Timer.cpp -o obj/Timer.o
+g++ -o bin/Prac2 obj/Prac2.o obj/JPEG.o obj/Timer.o -L/usr/lib -Ljpeg-6b -lm -ljpeg -pthread
+bin/Prac2
+Running tests for image: Data/fly.jpg
+Sequential run
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Clock resolution: 1 ns
+Time for sequential run is 114997 ms
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Time for sequential run is 114583 ms
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Time for sequential run is 114294 ms
+Number of threads: 16
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 20377.5ms
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 20130.6ms
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 20191.7ms
+Number of threads: 8
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 20180.8ms
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 114659ms
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 5831.13ms
+Calculating correlations
+The correlation for red: 0.0495529
+The correlation for green: 0.118635
+The correlation for blue: 0.0810254
+The average correlation: 0.0830713
+Running tests for image: Data/greatwall.jpg
+Sequential run
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Time for sequential run is 644525 ms
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Time for sequential run is 643516 ms
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Time for sequential run is 643516 ms
+Number of threads: 16
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 113746ms
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 113276ms
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 112471ms
+Number of threads: 8
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 19457.6ms
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 110404ms
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 5620.06ms
+Calculating correlations
+The correlation for red: -0.0494608
+The correlation for green: -0.139729
+The correlation for blue: -0.103959
+The average correlation: -0.0977162
+Running tests for image: Data/small.jpg
+Sequential run
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Time for sequential run is 6151.7 ms
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Time for sequential run is 6152.77 ms
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Time for sequential run is 6153.43 ms
+Number of threads: 16
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 5603.37ms
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 5638.22ms
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 5607.43ms
+Number of threads: 8
+Opened "Data/fly.jpg": width = 821, height = 1024, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 19308.2ms
+Opened "Data/greatwall.jpg": width = 1920, height = 2560, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 110472ms
+Opened "Data/small.jpg": width = 300, height = 304, c = 3
+File closed
+
+Threads have been created.
+Time taken for threads to run = 5574.61ms
+Calculating correlations
+The correlation for red: 0.967848
+The correlation for green: 0.950357
+The correlation for blue: 0.939829
+The average correlation: 0.952678
